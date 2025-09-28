@@ -1,0 +1,235 @@
+/* Custom styling for Cedar-OS chat to match Daily Digest card theme */
+
+/* Override Cedar-OS chat bubble styling */
+.cedar-chat-custom .prose {
+  color: hsl(var(--foreground)) !important;
+  max-width: none !important;
+}
+
+/* Ensure card background matches theme */
+.cedar-chat-custom {
+  background-color: hsl(var(--card)) !important;
+  border-color: hsl(var(--border)) !important;
+}
+
+/* User messages - green theme with proper chat bubble styling */
+.cedar-chat-custom div[style*="backgroundColor: #3b82f6"] {
+  background-color: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+  border-radius: 1rem !important;
+  box-shadow: none !important;
+  padding: 0.75rem 1rem !important;
+  max-width: 80% !important;
+  margin-left: auto !important;
+  font-weight: 500 !important;
+}
+
+/* Bot messages - muted background with chat bubble styling */
+.cedar-chat-custom .font-serif {
+  font-family: inherit !important;
+  background-color: hsl(var(--muted)) !important;
+  color: hsl(var(--foreground)) !important;
+  border-radius: 1rem !important;
+  padding: 0.75rem 1rem !important;
+  max-width: 80% !important;
+  margin-right: auto !important;
+}
+
+/* Message container alignment */
+.cedar-chat-custom div[class*="justify-end"] {
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-bottom: 1rem !important;
+}
+
+.cedar-chat-custom div[class*="justify-start"] {
+  display: flex !important;
+  justify-content: flex-start !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Text colors */
+.cedar-chat-custom .text-gray-600,
+.cedar-chat-custom .text-gray-500,
+.cedar-chat-custom .text-gray-400 {
+  color: hsl(var(--muted-foreground)) !important;
+}
+
+.cedar-chat-custom .text-gray-200,
+.cedar-chat-custom .text-gray-100,
+.cedar-chat-custom .dark\:text-gray-200,
+.cedar-chat-custom .text-\[\#141413\] {
+  color: hsl(var(--foreground)) !important;
+}
+
+.cedar-chat-custom .text-\[white\] {
+  color: hsl(var(--primary-foreground)) !important;
+}
+
+/* Background colors */
+.cedar-chat-custom .bg-gray-800,
+.cedar-chat-custom .dark\:bg-gray-800,
+.cedar-chat-custom .bg-gray-800\/10,
+.cedar-chat-custom .dark\:bg-gray-600\/80 {
+  background-color: hsl(var(--muted)) !important;
+}
+
+/* Input styling for card design */
+.cedar-chat-custom .ProseMirror {
+  color: hsl(var(--foreground)) !important;
+  background-color: hsl(var(--background)) !important;
+  border: 1px solid hsl(var(--border)) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem !important;
+  min-height: 2.5rem !important;
+  font-size: 0.875rem !important;
+}
+
+.cedar-chat-custom .ProseMirror:focus {
+  outline: none !important;
+  border-color: hsl(var(--primary)) !important;
+  box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2) !important;
+}
+
+/* Input container styling - clean card design */
+.cedar-chat-custom div[class*="bg-gray-800/10"],
+.cedar-chat-custom div[class*="dark:bg-gray-600/80"] {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Input wrapper should be clean */
+.cedar-chat-custom div[id="cedar-chat-input"] {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+.cedar-chat-custom button {
+  color: hsl(var(--muted-foreground)) !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem !important;
+}
+
+.cedar-chat-custom button:hover {
+  color: hsl(var(--foreground)) !important;
+  background-color: hsl(var(--muted)) !important;
+}
+
+/* Send button - make it green */
+.cedar-chat-custom div[style*="backgroundColor: #93c5fd"] {
+  background-color: hsl(var(--primary)) !important;
+}
+
+.cedar-chat-custom button[id="send-chat"] {
+  background-color: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+}
+
+.cedar-chat-custom button[id="send-chat"]:hover {
+  background-color: hsl(var(--primary)) !important;
+  opacity: 0.9 !important;
+}
+
+/* Hide context badges */
+.cedar-chat-custom #input-context {
+  display: none !important;
+}
+
+/* Send button styling */
+.cedar-chat-custom div[style*="backgroundColor: #93c5fd"] {
+  background-color: hsl(var(--primary)) !important;
+}
+
+/* Rounded corners for chat bubbles */
+.cedar-chat-custom .rounded-xl {
+  border-radius: 0.5rem !important;
+}
+
+/* Container styling */
+.cedar-chat-custom .border-gray-200,
+.cedar-chat-custom .dark\:border-gray-700 {
+  border-color: hsl(var(--border)) !important;
+}
+
+/* Fix light background - force dark theme */
+.cedar-chat-custom,
+.cedar-chat-custom > div,
+.cedar-chat-custom div[class*="Container3D"],
+.cedar-chat-custom div[class*="container"],
+.cedar-chat-custom div[class*="bg-white"],
+.cedar-chat-custom div[class*="bg-gray-50"],
+.cedar-chat-custom div[class*="bg-gray-100"] {
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+/* Override any light backgrounds with inline styles */
+.cedar-chat-custom div[style*="background-color: white"],
+.cedar-chat-custom div[style*="background-color: #ffffff"],
+.cedar-chat-custom div[style*="background-color: #f9f9f9"],
+.cedar-chat-custom div[style*="background-color: #f5f5f5"],
+.cedar-chat-custom div[style*="background-color: rgb(255"],
+.cedar-chat-custom div[style*="backgroundColor: white"],
+.cedar-chat-custom div[style*="backgroundColor: #ffffff"] {
+  background-color: hsl(var(--background)) !important;
+}
+
+/* Ensure main chat container has dark background */
+.cedar-chat-custom > div:first-child {
+  background-color: hsl(var(--background)) !important;
+}
+
+/* Header styling */
+.cedar-chat-custom .font-bold {
+  color: hsl(var(--foreground)) !important;
+}
+
+/* Empty state styling */
+.cedar-chat-custom .text-center {
+  color: hsl(var(--muted-foreground)) !important;
+}
+
+/* Thinking indicator styling */
+.cedar-chat-custom .animate-bounce {
+  background-color: hsl(var(--muted-foreground)) !important;
+}
+
+/* Better spacing for messages */
+.cedar-chat-custom > div > div > div {
+  padding: 0.75rem !important;
+  gap: 1rem !important;
+}
+
+/* Scrollbar styling */
+.cedar-chat-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cedar-chat-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cedar-chat-custom::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 3px;
+}
+
+.cedar-chat-custom::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* Improve typography */
+.cedar-chat-custom p {
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+.cedar-chat-custom .prose p {
+  margin-bottom: 0.5rem !important;
+}
+
+.cedar-chat-custom .prose p:last-child {
+  margin-bottom: 0 !important;
+}
