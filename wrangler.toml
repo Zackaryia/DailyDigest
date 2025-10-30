@@ -1,0 +1,22 @@
+name = "daily-digest-demo"
+main = "worker.ts"
+compatibility_date = "2024-06-01"
+
+[[kv_namespaces]]
+binding = "USERS"
+id = "890764d9cbf146f8888c91de85d72d61"
+
+[[kv_namespaces]]
+binding = "ARTICLES"
+id = "9ea55bbb5f3b4ea3a76e3ea96606f3c2"
+
+[[kv_namespaces]]
+binding = "BRIEFINGS"
+id = "745b8619fc6e49b6ba2375692f9a91fc"
+
+[ai]
+binding = "AI"
+
+# Cloudflare Pages configuration
+pages_build_output_dir = "frontend/dist"
+
